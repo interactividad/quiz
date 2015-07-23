@@ -10,3 +10,7 @@ exports.answer=function (req,res){
     res.render('quizes/answer',{title:"Mega-Quiz",respuesta: 'Incorrecto'});
   }
 };
+// GET /author
+exports.author=function (req,res){
+  res.render('author',{title: 'Mega-Quiz',nombre: 'Ignacio Romero', foto:"images/foto.jpeg",video:"images/video.mp4"});
+};
